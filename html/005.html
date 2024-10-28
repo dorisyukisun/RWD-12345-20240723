@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表單 -->
+    <form  action="" method="">
+        <label for="">姓名</label>
+        <input type="text" placeholder="請輸入姓名" name="a_name" id="name">
+        <br>
+        <lable for="">Email</lable>
+        <input type="email" placeholder="請輸入Email" name="a_email" id="email" >
+        <!--email 輸入你的 email -->
+        <br>
+        <label for=""pw>密碼</label>
+        <input type="password" placeholder="請輸入密碼" nmae="a_pw" id=""pw>
+        <br>
+        <label for="birth">生日</label>
+        <input type="datetime-local" name="a_birth" id="birth">
+        <br>
+        <label for="qty">數量</label>
+        <input type="number" placeholder="請輸入數量" name="a_qty" id="a_qty">
+        <!-- qty=你輸入的qty -->
+        <br>
+        <label for="">性別</label>
+
+        <input type="radio" id="male" name="gender" value="男">
+        <lable for="male">男</lable>
+        <!-- name是控制只能單選 -->
+        <input type="radio" id="female" name="gender" value="女">
+        <lable for="female">女</lable>
+
+        <input type="radio" id="unknow" name="gender" value="不透露">
+        <label for="unknow">不透露</label>
+        <!-- gender= female -->
+
+        <br>
+        <lable for="">專長</lable>
+        <!-- skill後面加入[]陣列記號可以處理多個選擇輸入 -->
+        <input type="checkbox" name="skill[]" id="design" value="平面設計">
+        <label for="design">平面設計</label>
+
+
+        <input type="checkbox" name="skill[]" id="web" valur="網頁設計">
+        <label for="web">網頁設計</label>
+
+
+        <input type="checkbox" name="skill[]" id="video" value="影片剪輯">
+        <label for="video">影片剪輯</label>
+
+        <!-- skill=[平面設計,網頁設計] -->
+        <br>
+        <label for="edu">學歷</label>
+        <select name="edu" id="edu">
+            <option value="國小">國小</option>
+            <option value="國中">國中</option>
+            <option value="高中職">高中職</option>
+            <option value="大專院校">大專院校</option>
+            <option value="研究所以上">研究所以上</option>
+        </select>
+        <!-- edu = 高中職 -->
+      <!-- checkbox radio select 要加value -->
+       <br>
+       <label for="content">內容</label>
+       <textarea name="content" id="content" row="10" cols="60"></textarea>
+       <br>
+       <input type="submit" value="送出">
+       <input type="reset">
+       <input type="button" value="自定義">
+       <br>
+       <button type="submit">送出</button>
+       <button type="reset">重設</button>
+       <button type="button">自定義</button>
+       <button>送出</button>
+    </form>
+    
+</body>
+</html>
