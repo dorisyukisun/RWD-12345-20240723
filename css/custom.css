@@ -1,0 +1,223 @@
+/* nav-start */
+nav{
+    background-color: rgb(0 0 0/.5);   
+     /* 設定橫向 */
+    display: flex; 
+    /* height: 100px;
+    align-items: cneter; */
+    /* gap:15px; */
+    /* padding-inline: 15px; */
+    gap: var(--spacing);
+    padding-inline: var(--spacing) ;
+
+    /* 固定定位 或是使用 黏性定位 將跳躍點落在正確的位置 */
+    position:fixed;
+    /* position:sticky; */
+    top:0;
+    width: 100%;
+    /* 下拉鎖定nav */
+    z-index: 9999;
+     
+}
+.nav-link,.nav-logo{
+    color: var(--clr-light);
+    text-decoration: none;
+    
+    display: inline-block;
+    padding-block: 35px;
+}
+.nav-menu:last-of-type{
+    margin-left:auto;
+}
+.nav-menu {
+    display: flex;
+    /* gap是設定flex裡面的物件空隙 */
+    gap:var(--spacing);
+}
+/* nav-end */
+/* header-start */
+/* 
+  1.高度使用height且使用背景
+  2.高度使用padding且使用背景
+  3.高度等比例且使用背景
+  4.高度使用height且使用img
+  5.高度等比例且使用img
+
+  PS.若網站沒有任何的圖片輪播或有後台串接可直接使用背景的方式製作banner(1,2,3)
+     反之則建議使用img當作banner 
+ */
+
+header{
+    width: 100%;
+    /* height: 600px; */
+    /* padding-block: 300px; */
+    /* padding-bottom:33% */
+    aspect-ratio: 2/1 ;
+    /* min-height:400px;s */
+    /* max-height:600px; */
+    /* background-color: #098; */
+    /* background-image: url('https://picsum.photos/id/87/1600/1000');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  */
+
+    /* position:relative */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* header img{
+    width: 100%;
+    height: 100%;
+    /* 這是讓圖片可以固定範圍 */
+   /* object-fit: cover;
+
+} */
+.header-content{
+    /* background-color: var(--clr-primary); */
+    background-color:rgb(255,255,255/.2) ;
+    backdrop-filter: blur(5px);
+    /* filter:blur(5px) */
+    width:min(400px,90%);
+    height:fit-content;
+    position:absolute;
+    /* inset為0為上下左右0 */
+    inset:0;
+    margin:auto;
+    text-align:center;
+    padding:min(30px, 6vw);
+    color:var(--clr-light);   
+    border-radius: 15px;
+}
+header h1{
+    font-size: 5rem;
+}
+
+
+/* header-end */
+/* About-Start */
+#about{
+    padding-block: 100px ;
+    /* background-color: #fff0bb; */
+    background-image: linear-gradient(to right bottom,#fff0bb,#ffe999);
+}
+#about h2{
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 1px solid hsl(47,100%,50%);
+}
+#about h3{
+    font-size:3rem;
+    color: var(--clr-dark);
+    margin-bottom: var(--spacing);
+}
+#about i {
+    color:var(--clr-blue-500);
+}
+#about .row.row{
+    align-items: center;
+}
+
+/* About-end */
+/* Service-start */
+#service{
+    padding-block:100px;
+    background-image: linear-gradient(to right bottom,#fff7db,#fff3c8);
+}
+#service img{
+    border-radius: 12px 12px ;
+}
+#service h2 {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom:1px solid hsl(47,100%,50%) ;
+}
+#service .row{
+    align-items: center;
+}
+#serivce h3{
+    font-size: 2rem;
+    /* margin-bottom: var(--spacing); */
+}
+#service p{
+    /* margin-bottom: var(--spacing); */
+}
+.service-content{
+    display: flex;
+    flex-direction: column;
+    gap:var(--spacing);
+    align-items: start;
+}
+#service .container:last-of-type .col-6:first-of-type{
+    order:2;
+}
+#service .container:last-of-type .col-6:last-of-type{
+    order: 1;
+}
+#service .container:first-of-type .service-content{
+    /* background-color: var(--crl-amber-300); */
+    background-color: Hsla(47, 100%, 70%, 50%);
+    backdrop-filter: blur(8px);
+    position: relative;
+    left:  -100px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px 8px ;
+}
+/* #service .col-6:nth-of-type(3){order:4;} */
+/* #service .col-6:nth-of-type(4){order:3;} */
+/* Service-end  */
+/* folio-start */
+#folio{
+    background-image: linear-gradient(to right bottom,#fff0bb,#ffe999);
+    padding-block: 100px;
+    h2{
+        font-size:3rem;
+        text-align:center;
+        /* border-bottom: 1px solid hsl(47, 100%, 50%); */
+    }
+
+    figure{
+        position: relative;
+    
+    figcaption {
+        position: absolute;
+        background-color: rgba(255, 184, 78, 0);
+        backdrop-filter: blur;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        display: flex;
+        justify-content:  center;
+        align-items: center;
+        color: var(--clr-light);
+        font-size: 1.4rem;
+
+        transition: .3s;
+    
+        }
+    
+    }
+   a:hover{
+        figcaption{
+            color:var(--clr-blue-500);
+            backdrop-filter: blur(5px);
+            background-color: rgba(255, 184, 78, 0.8); 
+        }
+   }
+}
+
+/* folio-end  */
+/* footer-start */
+  footer{
+    background-color: var(--clr-dark);
+    color:var(--clr-light);
+    text-align: center;
+    padding-block:30px;
+    font-size: 14px;
+    font-weight: 300;
+
+  }
+
+/* footer-end */

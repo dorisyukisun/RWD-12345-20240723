@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        /* 將壓縮關掉,會換行 */
+        flex-wrap: wrap;
+        width: 1200px;
+        margin-inline:auto;
+        background-color: #ccc;
+    }
+    .box{
+        width: 300px;
+        padding:15px;
+    }
+    /* .box:nth-of-type(1){}
+    .box:nth-of-type(2){order:1;}
+    .box:nth-of-type(3){}
+    .box:nth-of-type(4){} */
+
+
+    /* 自然排序優先於人工排序 */
+  
+    .box:nth-last-of-type(1){
+        background-color: blueviolet;
+        /* flex的基本的小 */
+        flex-basis: 200px;
+        /* 將壓縮關掉 不換行 */
+        flex-shrink: 0;
+        /* 寬度延展 只有0或1值 */
+        flex-grow:  1;
+    }
+    .box:nth-last-of-type(2){
+        background-color: pink;
+        /* flex的基本的小 */
+        flex-basis: 500px;
+        /* 將壓縮關掉 不換行 */
+        flex-shrink: 0;
+        /* 寬度延展 */
+        flex-grow: 8;
+    
+    }
+    .box:nth-last-of-type(3){
+        background-color: lightblue;
+        /* flex的基本的小 */
+        flex-basis: 500px;
+        /* 將壓縮關掉 不換行 */
+        flex-shrink: 0;
+        /* 寬度延展 */
+        flex-grow: 1;
+    }
+    .box:nth-last-of-type(4){
+        background-color: red;
+        /* flex的基本的小 */
+        flex-basis: 500px;
+        /* 將壓縮關掉 不換行 */
+        flex-shrink: 0;
+        /* 寬度延展 */
+        flex-grow: 1;
+    }
+    /* flex-basis: 基本大小
+       當flex-direction為row時,flex-basis表寬度, flex-direction為column時,flex-basis 表高度
+       flex-shrink: 壓縮,預設為開啟
+       flex-grow: 延展,預設為關閉
+
+       flex-basis會優先於width(height)
+       height在預設的狀態下,不支援%
+    */
+</style>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h1>title1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+         
+        <div class="box">
+            <h1>title2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+        
+        <div class="box">
+            <h1>title3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+        
+        <div class="box">
+            <h1>title4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+        
+    </div>
+    
+    
+</body>
+</html>

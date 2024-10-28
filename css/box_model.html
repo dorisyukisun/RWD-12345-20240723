@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         /* 萬用選取器 */
+         * {
+            /* box的尺寸 會以border為主,不會因為改了padding 還是其他動到 */
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: #aaa;
+            width: 200px;
+            /* min-width: 200px;
+            max-width: 800px; */
+            /* height: 200px; */
+            /* visible, hidden, scroll,auto, clip */
+            /* 最大最小高度 */
+            /* min-height: 200px;
+            max-height: 500px; */
+            
+
+            /* 若字超過區塊可以用overflow */
+            /* overflow-x:hidden ;
+            overflow-y: scroll; */
+
+            /* padding 內距 */
+            /* padding:30px; */
+            
+            /* 
+            padding-left: ;
+            padding-right: ;
+            padding-top: ;
+            padding-bottom: ; 
+            */
+
+            /*    inline 左右  block 上下
+            padding-inline:;
+            padding-inline-start: ;
+            padding-inline-end:;
+            padding-block: ;
+            padding-block-start: ; 
+            padding-block-end: ;
+             */
+
+
+            /* margin 外距 */
+            /* 
+            注意:在預設的狀態下, 上下margin會重疊,會以大的優先
+             */
+            margin: 30px; 
+
+            
+            /* margin-left: auto ; */
+            /* margin-right: ;
+            margin-top: ;
+            margin-bottom: ; 
+             */
+            /* 
+            margin-inline:;
+            margin-inline-start: ;
+            margin-inline-end: ;
+            margin-block: ;
+            margin-block-start: ;
+            margin-block-end: ; */
+
+            /* margin:40px; */
+            /* 上下左右 */
+
+            /* margin:40px 0; */
+            /* 上下 左右 */
+
+            /* margin:40px 0 50px; */
+            /* 上 左右 下 */
+            
+            /* margin: 40px 0 50px 100px ; */
+            /* 上 右 下 左 */
+
+            
+            /*border 邊框  */
+            /* border: 5px solid red; */
+            /* border-color:burlywood;
+            border-width: 10px;
+            border-style:ridge; */
+            /*solid, dotted,dashedm double, inset, outset, groove, ridge */
+            
+            /* border-top-color:;
+            border-top-style:;
+            border-top-width: ;
+
+            border-bottom-color:;
+            border-bottom-style:;
+            border-bottom-width: ;
+
+            border-left-color:;
+            border-left-style:;
+            border-left-width: ;
+
+            border-right-color:;
+            border-right-style:;
+            border-right-width: ;
+             */
+        } 
+
+        span.box{
+            background-color: aqua;
+        }
+        /* block vs inline 
+            inline沒有width和height
+            inline的padding上下可見,但不影響空間,但左右正常
+            margin只有上下，只有左右
+
+            結論:inline沒有width,height,上下padding,上下margin
+                inline只有左右padding,左右margin
+        */
+        /* 預設狀態下總寬度 = width +border + padding */
+
+    </style>
+    </head>
+<body>
+
+<div class="box">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nobis optio fuga tempore, quam, temporibus nesciunt suscipit dolore ut, qui possimus amet placeat distinctio impedit laboriosam. Culpa, totam? Suscipit, repellendus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eius officiis quibusdam omnis reprehenderit laudantium veniam architecto quam ullam, ab tempora, harum voluptatum non, fuga ut atque rerum ad a.
+</div>
+<div class="box">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nobis optio fuga tempore, quam, temporibus nesciunt suscipit dolore ut, qui possimus amet placeat distinctio impedit laboriosam. Culpa, totam? Suscipit, repellendus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eius officiis quibusdam omnis reprehenderit laudantium veniam architecto quam ullam, ab tempora, harum voluptatum non, fuga ut atque rerum ad a.
+</div>
+<div class="box">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nobis optio fuga tempore, quam, temporibus nesciunt suscipit dolore ut, qui possimus amet placeat distinctio impedit laboriosam. Culpa, totam? Suscipit, repellendus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eius officiis quibusdam omnis reprehenderit laudantium veniam architecto quam ullam, ab tempora, harum voluptatum non, fuga ut atque rerum ad a.
+</div>
+<span class="box">
+     inline
+</span>
+<span class="box">
+    inline
+</span>
+<span class="box">
+    inline
+</span>
+<span class="box">
+    inline
+</span>
+<span class="box">
+    inline
+</span>
+
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    /* 下拉滑動 */
+    scroll-behavior: smooth;
+    scroll-padding: 86px;
+
+}
+body{
+    font-family:var (--ff-sans);
+}
+img{
+    width: 100%;
+    display: block;
+}
+.cover{
+        width: 100%;
+        height: 100%;
+        /* 這是讓圖片可以固定範圍 */
+       object-fit: cover;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color:var(--clr--dark);
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.btn-amber{
+    background-color: var(--clr-amber-400);
+}
+.btn-red {
+    background-color: var(--clr-red-400);;
+}
+.btn-blue {
+    background-color: var(--clr-blue-400);;
+}

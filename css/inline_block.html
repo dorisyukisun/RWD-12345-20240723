@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+    body{
+        /* 將區塊的間隔移除 1.先將font-size:0  */
+        font-size: 0 ;
+    }
+    .box{
+        background-color: #ccc;
+        /* 改成橫向 */
+        display: inline-block;
+        width: 200 px;
+        /* 2.將框框內自行恢復尺寸 */
+        font-size:  16px; 
+    }
+    .inline {
+        font-size: 8px 30px;
+        font-size: 14px;
+        background-color: #fa8;
+        text-decoration: none;
+        display: inline-blocks;
+    }
+    /* inline 與 inline-block 的空隙問題
+        1.將父層元素的font-size設定為0
+        2.自已的font-size還原
+    */
+  </style>
+  </head>
+<body>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit id minus ex tempora, illo fugit nostrum expedita esse cumque, consectetur consequuntur soluta voluptas animi, quidem corporis doloremque modi aliquid placeat.
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit id minus ex tempora, illo fugit nostrum expedita esse cumque, consectetur consequuntur soluta voluptas animi, quidem corporis doloremque modi aliquid placeat.
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit id minus ex tempora, illo fugit nostrum expedita esse cumque, consectetur consequuntur soluta voluptas animi, quidem corporis doloremque modi aliquid placeat.
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit id minus ex tempora, illo fugit nostrum expedita esse cumque, consectetur consequuntur soluta voluptas animi, quidem corporis doloremque modi aliquid placeat.
+    </div>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <a href="#" class="btn">link</a>
+
+
+</body>
+</html>

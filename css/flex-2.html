@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 1600px; 
+            display: flex;
+            background-color: #ccc;
+            flex-wrap:  wrap;
+
+
+            flex-direction: row;
+        
+            justify-content: center;
+            /* 區塊位置 分散內容 與flex-direction 連動 橫向用row 直向用colum
+            start, center, end, 
+            space-between 頭尾靠邊邊, space-around周圍平均, space-evenly
+              */
+           align-items: center; 
+           /* 對齊項目
+           start, center,end, stretch預設值 ,baseline 第一行的底線
+            */
+            
+           align-content: space-evenly;
+           /* 
+             start, center, end, stretch, baseline
+           */
+
+        }
+        .box{
+            width: 250px;
+        }
+        .box:nth-of-type(odd){
+            background-color: 9DDE88;
+        }
+        .box:nth-of-type(even){
+            background-color: #40ba78;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>title1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+         
+        <div class="box">
+            <h1>title2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+        
+        <div class="box">
+            <h1>title3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+        
+        <div class="box">
+            <h1>title4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+        <div class="box">
+            <h1>title5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+        <div class="box">
+            <h1>title6</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+        
+        
+        <div class="box">
+            <h1>title7</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+
+        <div class="box">
+            <h1>title8</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid facere? Iure, quod nulla. Nemo veniam eum assumenda reiciendis veritatis, dolores officiis adipisci totam ipsa sunt numquam at ipsum molestiae.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

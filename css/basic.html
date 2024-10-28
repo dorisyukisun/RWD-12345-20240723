@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        /* 執行序:1.html -> 2.css 
+                 link      @import（字體 icon 比較好)
+        */ 
+        @import url('style.css'); 
+        /* import 要寫在第一行才會有效 */
+
+        p{
+            color: pink;    
+        }
+
+        .abc{
+
+          color: lightblue;
+
+        }
+
+        #xyz{
+            color:blueviolet;
+        }
+        h1{
+           color:green;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Css cascading style sheet 串接樣式表 -->
+    <!-- 分類
+     1.嵌入式樣式
+     2.內部樣式
+     3.外部樣式
+
+     基本選取器
+     1.tag 標籤選取器
+     2.class 類別選取器(可以重複)
+     3.id選取器(不可重複)
+
+     影響css套用的狀況
+     1.權重會影響
+     2.順序會影響
+     3.css本身的特性
+
+     權重(specific)
+     影響的元素愈少,權重越重,愈優先套用
+     !important >嵌入式 > id > class > tag 
+
+     當權重相同的情況下,則以順序為主,愈後寫愈優先
+    -->
+     
+     <!-- 嵌入式 -->
+
+      <h1 style="color:red">hello css</h1>
+      <h2>內部樣式</h2>
+      <p class="abc">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ut dicta perspiciatis reiciendis sapiente tenetur, alias neque cupiditate sit obcaecati cumque odio amet? Ad, reiciendis. Corrupti iure doloremque libero temporibus.
+      </p>
+
+      <h1>hello css</h1>
+      <h2>內部樣式</h2>
+      <p class="abc">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ut dicta perspiciatis reiciendis sapiente tenetur, alias neque cupiditate sit obcaecati cumque odio amet? Ad, reiciendis. Corrupti iure doloremque libero temporibus.
+      </p>
+
+      <h1>hello css</h1>
+      <h2>內部樣式</h2>
+      <p id="xyz">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ut dicta perspiciatis reiciendis sapiente tenetur, alias neque cupiditate sit obcaecati cumque odio amet? Ad, reiciendis. Corrupti iure doloremque libero temporibus.
+      </p>
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+            height: 400px;
+            border: 1px solid red;
+            /* background-color: #aaa; */
+
+            /* 合併格子 */
+            border-collapse: collapse;
+            /* border-spacing: 15px; */
+        }
+        /* 群組擷取器
+            a,b,c()
+            表示abc同時套用樣式
+        */
+        td,th{
+            border: 1px, solid red;
+        }
+        td{
+            /* border:1px solid blue; */
+            /* background-color: #ccc; */
+        }
+
+        th{
+            /* border: 1px solid greenyellow; */
+            /* background-color: #cccc; */
+        }
+        /* 虛擬類別 :nth-of-type  一個 “:"*/
+         /* tr:nth-of-type(2n+1){
+           background-color:orange;
+        } */
+
+        /* 偶數greenyellow */
+         tr:nth-of-type(even){
+            background-color: greenyellow;
+
+         }
+         /* 基數lightblue  */
+         tr:nth-of-type(odd){
+            background-color: lightblue;
+         }
+         /* 第六行給顏色 */
+         tr:nth-of-type(6){
+            background-color: pink;
+         }
+
+         /* 第一行紅色 */
+         tr:first-of-type{
+            background-color: red;
+
+         }
+         /* 最後一行 */
+         tr:last-of-type{
+            background-color: coral;
+
+         }
+         /* 從後面倒數第三行 */
+         tr:nth-last-of-type(3)
+         {
+            background-color: blue;
+         }
+    </style>
+</head>
+<body>
+
+    <table>
+            <tr>
+                <th>標題</th>
+                <th>標題</th>
+                <th>標題</th>
+                <th>標題</th>
+            </tr>
+            <tr>
+                
+                    <td>內容</td>
+                    <td>內容</td>
+                    <td>內容</td>
+                    <td>內容</td>
+            </tr>    
+
+            <tr>
+                    <td>內容</td>
+                    <td>內容</td>
+                    <td>內容</td>
+                    <td>內容</td>
+            </tr>
+
+            <tr>
+                
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+        </tr>    
+
+        <tr>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+        </tr>
+
+
+        <tr>
+                
+            <td>內容</td>
+            <td>內容</td>
+            <td>內容</td>
+            <td>內容</td>
+         </tr>    
+
+        <tr>
+            <td>內容</td>
+            <td>內容</td>
+            <td>內容</td>
+            <td>內容</td>
+         </tr>
+
+
+        <tr>
+                
+        <td>內容</td>
+        <td>內容</td>
+        <td>內容</td>
+        <td>內容</td>
+        </tr>    
+
+    <tr>
+        <td>內容</td>
+        <td>內容</td>
+        <td>內容</td>
+        <td>內容</td>
+    </tr>
+
+
+
+
+    </table>
+    
+</body>
+</html>

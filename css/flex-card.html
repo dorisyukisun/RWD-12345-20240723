@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+    .container{
+        /* 先設定一個寬度 到了最大的寬度會停止
+        width: 90%;
+        max-width:1200px;      */
+        
+        width: min(1200px, 90%) ;
+        /* 在寬度當中,哪個(min)小就以哪個為準 */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-inline: auto;
+    }
+    .col{
+        /* flex-basis: 300px; */
+        /* calc 是計算 */ 
+        flex:0 0 calc(100% /4);
+        padding: 10px;
+    }
+    .card{
+        background-color:  #B4D6CD    ;
+        border-radius: 20px;
+        overflow: hidden;
+
+        
+        box-shadow: 4px 6px 5px 0px rgb(0 0 0 /.2);
+        /* 水平偏移 垂直偏移 強度 擴散 顏色 內陰影（inset）*/
+    }
+    .card-body{
+        padding: 15px;
+ 
+    }
+    img{
+        width: 100%;
+    } 
+    /* 後代選取器
+      a b {}
+      在a裡面得b會被套用
+    */
+    .card h3{
+        margin-bottom:  15px;
+        font-size: 26px;
+    }
+    .card p {
+        margin-bottom: 35px;
+        font-size: 14.4px;
+    }
+    .btn{
+      display: inline-block;
+      text-decoration: none;
+      background-color: #FF4E88;
+      color:#111;
+      padding:8px 30px;
+    
+
+        /* border-radius: 8px; */
+            /* border-radius: 8px 0px; */
+            /* 左上右下 左下右上 */
+
+            /* border-radius: 15px 0px 5px; */
+            /* 左上 左下右上 右下 */
+
+            border-radius: 0px 20px 20px 0;
+            /* 左上 右上 右下 左下 */
+
+
+    }
+
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="col">
+        <div class="card">
+            <img src="https://picsum.photos/id/34/800/600" alt="">
+            <div class="card-body">
+                <h3>Hello</h3>
+                <p>
+                    優秀好多人體國有近日首頁可以貨幣，不斷。
+                </p>
+                <a href="#" class="btn">Link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="https://picsum.photos/id/34/800/600" alt="">
+            <div class="card-body">
+                <h3>Hello</h3>
+                <p>
+                    優秀好多人體國有近日首頁可以貨幣，不斷。
+                </p>
+                <a href="#" class="btn">Link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="https://picsum.photos/id/34/800/600" alt="">
+            <div class="card-body">
+                <h3>Hello</h3>
+                <p>
+                    優秀好多人體國有近日首頁可以貨幣，不斷。
+                </p>
+                <a href="#" class="btn">Link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="https://picsum.photos/id/34/800/600" alt="">
+            <div class="card-body">
+                <h3>Hello</h3>
+                <p>
+                    優秀好多人體國有近日首頁可以貨幣，不斷。
+                </p>
+                <a href="#" class="btn">Link</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>

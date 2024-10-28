@@ -1,0 +1,16 @@
+/* nav-start */
+nav{
+    background-color: var(--clr-dark);   
+     /* 設定橫向 */
+    display: flex; 
+     
+}
+.nav-link,.nav-logo {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+.nav-menu:last-of-type{
+    margin-left:auto;
+}
+
+/* nav-end */

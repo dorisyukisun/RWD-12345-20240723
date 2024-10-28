@@ -1,0 +1,38 @@
+.container{
+    width: min(1200px 100%);
+    margin-inline:auto;
+}
+.row{
+    display: flex ;
+    flex-wrap:wrap;
+}
+.col{
+    flex: 1 0 0;
+}
+.col-1{flex:0 0 calc(100% /12*1);}
+.col-2{flex:0 0 calc(100% /12*2);}
+.col-3{flex:0 0 calc(100% /12*3);}
+.col-4{flex:0 0 calc(100% /12*4);}
+.col-5{flex:0 0 calc(100% /12*5);}
+.col-6{flex:0 0 calc(100% /12*6);}
+.col-7{flex:0 0 calc(100% /12*7);}
+.col-8{flex:0 0 calc(100% /12*8);}
+.col-9{flex:0 0 calc(100% /12*9);}
+.col-10{flex:0 0 calc(100% /12*10);}
+.col-11{flex:0 0 calc(100% /12*11);}
+.col-12{flex:0 0 calc(100% /12*12);}
+
+/* 屬性選取器 */
+[class^="col"]{
+    padding: var(--spacing);
+}
+/* 單一的padding-0 */
+.padding-0{
+    padding:0 !important;
+}
+/* 子代選取器 針對裡面的某一項物件沒有padding “>" 指向 col的下一層 no padding */
+
+.no-padding >[class^="col"]{
+    padding:0;
+}
+ 

@@ -1,0 +1,24 @@
+/* 根目錄變數 */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=LXGW+WenKai+TC:wght@300;400;700&family=Noto+Serif+TC:wght@200..900&family=Poppins:wght@200;400;800&display=swap');
+:root {
+    --clr-blue-300: hsl(215, 97%, 70%);
+    --clr-blue-400: hsl(215, 97%, 60%);
+    --clr-blue-500: hsl(215, 97%, 50%);
+    --clr-red-300: hsl(344, 97%, 70%);
+    --clr-red-400: hsl(344, 97%, 60%);
+    --clr-red-500: hsl(344, 97%, 50%);
+    --clr-amber-300: hsl(47, 100%, 70%);
+    --clr-amber-400: hsl(47, 100%, 60%);
+    --clr-amber-500: hsl(47, 100%, 50%);
+
+    --clr-dark: #1d1d1d;
+    --clr-light: #eee;
+
+    --ff-serif: 'Bodoni Moda','Noto Serif TC',serif;
+    --ff-sans: 'poppins','LXGW WenKai TC',sans-serif;
+
+    --clr-primary: var(--clr-amber-400);
+    --clr-secondary: var(--clr-red-300);
+
+    --spacing: 15px;
+}
